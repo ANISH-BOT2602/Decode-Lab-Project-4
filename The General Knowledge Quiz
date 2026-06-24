@@ -1,0 +1,33 @@
+# Initialize the score variable
+score = 0
+
+print("Welcome to the General Knowledge Quiz!")
+print("--------------------------------------")
+
+# Question 1
+answer1 = input("1. What is the capital of France? ").strip().capitalize()
+if answer1 == "Paris":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect. The capital is Paris.")
+
+# Question 2
+answer2 = input("2. How many continents are there? ")
+if answer2 == "7":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect. There are 7 continents.")
+
+# Question 3
+answer3 = input("3. What is the largest ocean on Earth? ").strip().capitalize()
+if answer3 == "Pacific":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect. It is the Pacific Ocean.")
+
+# Final Results
+print("--------------------------------------")
+print(f"Game Over! Your final score is: {score}/3")
